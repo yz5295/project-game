@@ -145,7 +145,7 @@ function trin() {
       let user = JSON.parse(localStorage.getItem("myUser"));
       let usersObj = JSON.parse(localStorage.getItem("users"));
       usersObj.find((a) => a.name === user.name).victoriesTactic++;
-      const newnum = usersObj.find((a) => a.name === user.name);
+      const newnum = usersObj.find((a) => a.name === user.name).victoriesTactic;
       localStorage.setItem("users", JSON.stringify(usersObj));
       user.victoriesTactic = newnum;
       localStorage.setItem("myUser", JSON.stringify(user));
