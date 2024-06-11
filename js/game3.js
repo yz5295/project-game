@@ -144,13 +144,11 @@ function trin() {
       modal.style.display = "block";
       let user = JSON.parse(localStorage.getItem("myUser"));
       let usersObj = JSON.parse(localStorage.getItem("users"));
-      const newnum = usersObj.find((a) => a.name === user.name)
-        .victoriesTactic++;
-      console.log(newnum);
+      usersObj.find((a) => a.name === user.name).victoriesTactic++;
+      const newnum = usersObj.find((a) => a.name === user.name);
       localStorage.setItem("users", JSON.stringify(usersObj));
       user.victoriesTactic = newnum;
       localStorage.setItem("myUser", JSON.stringify(user));
-      console.log(user);
       return true;
     }
     if (moneTheTruecomputer[i] === 3) {

@@ -102,12 +102,11 @@ for (let i = 0; i < img.length; i++) {
             clickCount = 2;
             let user = JSON.parse(localStorage.getItem("myUser"));
             let usersObj = JSON.parse(localStorage.getItem("users"));
+            usersObj.find((a) => a.name === user.name).victoriesMomery++;
             let newnum = usersObj.find((a) => a.name === user.name)
-              .victoriesMomery++;
             localStorage.setItem("users", JSON.stringify(usersObj));
             user.victoriesMomery = newnum;
             localStorage.setItem("myUser", JSON.stringify(user));
-            console.log(user);
           }
         }
       }
