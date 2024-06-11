@@ -1,0 +1,316 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  text-align: center;
+  background-color: rgb(83, 172, 172);
+  font-family: Varela Round;
+}
+.butten {
+  font-size: 18px;
+  padding: 3px;
+  text-align: left;
+  font-family: Varela Round;
+  border-radius: 8px;
+  border: rgba wheat 6px;
+  color: rgb(7, 41, 51);
+  /* text-decoration: none; */
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  font-weight: bolder;
+}
+.butten2 {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+  rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+  rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 35px;
+  width: 310px;
+  font-size: 26px;
+  border-radius: 8px;
+  border: 0px solid;
+  background-color: darkcyan;
+  color: azure;
+  margin-top: -20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: Varela Round;
+  margin-bottom: 20px;
+    animation: my-anim 2s ease-in-out infinite;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  @keyframes my-anim {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+  }
+}
+.continer {
+  background-color: rgb(252, 246, 238);
+  display: inline-block;
+  padding: 50px;
+  margin-top: 70px;
+  border-radius: 25px;
+  display: none;
+  max-width: 100%;
+  margin: 10px;
+}
+.continer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px; 
+  max-width: 100%;/
+
+}
+.box {
+  background-color: antiquewhite;
+  padding: 20px;
+  display: block;
+  border: 1px solid #727272;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.boxg {
+  background-color: rgb(197, 187, 187);
+}
+.xo {
+  height: 170px;
+  width: 170px;
+  min-height: 100px;;
+  display: inline;
+  margin: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  max-width: 100%;
+  
+}
+.boxxo{
+  background-color: rgb(176, 226, 226);
+  display: inline-block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 100%;
+  margin: 10px;
+  margin-top: 50px;
+}
+.putintable {
+  width: 90px;
+  height: 90px;
+  margin-right: -15px;
+  margin-top: -15px;
+}
+header img {
+  margin: 15px;
+  height: 60px;
+  width: 40px;
+}
+header{
+  background-color: #09709f;
+  display: inline-block;
+  color: azure;
+  font-size: 18px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  right: 100px;
+  height: 70px;
+}
+header a{
+  color: azure;
+  text-decoration: none;
+ 
+}
+header a:hover, #hover:hover {
+  color: rgb(11, 11, 14);
+  font-weight: 600;
+  cursor: pointer;
+}
+.outheader {
+  position: absolute;
+}
+#logo {
+  right: 10px;
+}
+#go {
+  left: 10px;
+}
+.user-info {
+  text-align: right;
+}
+
+.user-info h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.x {
+  margin: 0;
+}
+.y {
+margin: 0;
+}
+.button {
+  height: 35px;
+  width: 310px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 0px solid;
+  background-color: darkcyan;
+  color: azure;
+  margin-top: 3px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: Varela Round;
+  margin-top: 7px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  position: relative;
+  background-color: #c1e4e4;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.backinmodel{
+  color: rgb(7, 41, 51);
+  font-size: 18px;
+  font-weight: bolder;
+}
+#go {
+font-size: 16px;
+border-radius: 5px;
+padding: 8px;
+margin-left: 30px;
+border: rgb(1, 69, 90) 2px solid;
+color: darkcyan;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#go:hover {
+  border: rgb(221, 252, 252) 2px solid;
+  color: rgb(221, 252, 252);
+  background-color: rgb(1, 69, 90);
+}
+.a{
+  margin: auto;
+}
+.close {
+  color: rgb(11, 10, 14);
+  padding: 2px 5px;
+  border-radius: 5px;
+  top: 2px;
+  text-align: right;
+  font-size: 26px;
+  position: absolute;
+  right: 10px;
+}
+
+.close:hover {
+  background-color: #111213;
+  color: azure;
+}
+@media (max-width: 871px) {
+  header {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 670px) {
+  header {
+    font-size: 14px;
+  }
+}
+@media(max-width: 573px) {
+  header {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 3px;
+    height: 100%;
+  }
+  #go {
+    top: 20px;
+    left: 2px;
+  }
+  #logo {
+    top: -10;
+  }
+  header img {
+    margin-right: 10px;
+  }
+  header div p {
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 490px) {
+  
+  .xo {
+    height: 110px;
+    width: 110px;
+  }
+  .box {
+    width: 80px;
+    height: 80px;
+    /* padding: 5px; */
+    margin: 0 auto;
+  }
+  .putintable {
+  width: 70px;
+  height: 70px;
+  }
+  .continer {
+  margin-top: 30px;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 10px;
+  height: 320px;
+  }
+  .continer-grid {
+  gap: 0.5px; 
+
+  }
+   .butten2 {
+    height: 60px;
+    font-size: 22px;
+  }
+}
+
+
+

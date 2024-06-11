@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/game3.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <title>TIC Tac Toe</title>
+  </head>
+  <body dir="rtl">
+    <body dir="rtl">
+      <header>
+        <img src="/assets/img/logo-search-grid-1x.png" alt="logo" id="logo" class="outheader"/>
+        <div>
+        <p>שם משתמש: <span id="username"></span></p>
+        <p>מספר נצחנות: <span id="victories"></span></p>
+      </div>
+        <p id="hover">הוראות למשחק</p>
+        <a href="/pages/menu.html">חזרה לעמוד הראשי</a>
+        <button id="go" class="outheader">נתק</button>
+      </header>
+    <div class="boxxo">
+      <h1>אנא בחר את הצורה שלך</h1>
+      <img id="x" class="xo" src="/assets/img/x3.png" alt="x" />
+      <img id="o" class="xo" src="/assets/img/o3.png" alt="o" />
+    </div>
+    <div class="continer">
+      <div class="continer-grid">
+        <div id="0" class="box boxg"></div>
+        <div id="1" class="box a"></div>
+        <div id="2" class="box boxg"></div>
+        <div id="3" class="box a"></div>
+        <div id="4" class="box boxg"></div>
+        <div id="5" class="box a"></div>
+        <div id="6" class="box boxg"></div>
+        <div id="7" class="box a"></div>
+        <div id="8" class="box boxg"></div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h1 id="tit"></h1>
+        <form action="">
+          <button value="sumbit" class="butten2">שחק שוב</button>
+        </form>
+        <a class="backinmodel" href="/pages/menu.html">חזרה לעמוד הראשי</a>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <p>
+          <span class="close">&times;</span>
+          <strong> הוראות למשחק איקס עיגול:</strong>
+          
+          <br />
+          השחקן הראשון מציב את סימנו בכל משבצת ריקה על הלוח. השחקנים מתחלפים
+          בתורם, כל אחד מציב את סימנו במשבצת ריקה. אסור להציב סימן על משבצת
+          שכבר תפוסה. המשחק נגמר כאשר אחד השחקנים מציב שלושה סימנים זהים בשורה
+          אחת, טור אחד או אלכסון אחד. אם כל המשבצות מתמלאות ואף שחקן לא הצליח
+          להשלים רצף של שלושה סימנים, המשחק מסתיים בתיקו. <br>
+          <strong>בהצלחה!</strong>
+        </p>
+      </div>
+    </div>
+    <script src="/js/game3.js"></script>
+  </body>
+</html>

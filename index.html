@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/main.css" />
+    <title>PleyMy</title>
+  </head>
+  <body dir="rtl">
+    <header>
+      <img src="/assets/img/logo-search-grid-1x.png" alt="logo" />
+    </header>
+    <div class="box" id="login">
+      <h3 class="title">התחברות</h3>
+      <form action="">
+        <div class="box2">
+          <label for="email"> כתובות אימייל: <span>*</span></label>
+          <input type="email" id="email" name="email" required /><br />
+        </div>
+        <div class="box2">
+          <label for="pass"> סיסמה: <span>*</span></label>
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            minlength="6"
+            required
+          /><br />
+        </div>
+        <p class="title1">t</p>
+        <div class="boxclick">
+          <button class="button" id="buttonLogin">כניסה</button><br />
+          <h3 class="title3">אין לך עדיין חשבון?</h3>
+          <button class="button" id="buttonNewUser">לחץ להרשמה</button>
+        </div>
+      </form>
+    </div>
+    <div class="box" id="signup">
+      <form action="">
+        <div class="box2 box3">
+          <label for="newName">שם משתמש: <span>*</span></label>
+          <input type="text" id="newName" name="newName" required /><br />
+        </div>
+        <div class="box2 box3">
+          <label for="newEmail">כתובת אימייל: <span>*</span></label>
+          <input type="email" id="newEmail" name="newEmail" required /><br />
+        </div>
+        <div class="box2 box3">
+          <label for="newPass">הכנס סיסמה: <span>*</span></label>
+          <input
+            type="password"
+            id="newPass"
+            name="newPass"
+            placeholder="חייב להכיל אות אחת ותו מיוחד אחד (!@%$#^&*)"
+            required
+          /><br />
+        </div>
+        <div class="box2 box3">
+          <label for="againNewPass">אמת את סיסמתך: <span>*</span></label>
+          <input
+            type="password"
+            id="againNewPass"
+            name="againNewPass"
+            required
+          /><br />
+        </div>
+        <button class="button" id="buttonSignup">אישור הרשמה</button>
+      </form>
+      <p class="title2">סיסמה שגויה</p>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
