@@ -3,63 +3,37 @@
   padding: 0px;
   box-sizing: border-box;
 }
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 body {
   text-align: center;
   background-color: rgb(83, 172, 172);
   font-family: Varela Round;
 }
 .continer {
-  display: flex;
-  height: 100%;
+  display: inline-block;
+  margin-top: 10px;
+  max-width: 100%;
 }
-.box-l {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-right: 180px;
-  margin-top: 30px;
+.continer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 15px;
+  max-width: 100%;
 }
-.box-r {
-  background-color: rgb(1, 16, 36);
-  color: rgb(217, 215, 250);
-  width: 150px;
-  text-align: center;
-  flex-direction: column;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  right: 0;
-}
-.box-r h1 {
-  margin-top: 5px;
-  margin-bottom: 1.5px;
-  font-size: 25px;
-}
-.theCard {
-  background-color: rgba(2, 31, 54, 0.527);
-  width: 130px;
-  height: 75px;
-  margin: 7.8px;
+.box {
+  background-color: rgb(202, 246, 253);
+  display: block;
   border-radius: 15px;
-}
-.imgintheCard {
-  background-color: rgb(230, 243, 241);
-  width: 130px;
-  height: 80px;
-  border-radius: 15px;
-}
-.cover {
-  background-color: #fff;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  background-color: rgb(230, 243, 241);
-  width: 220px;
-  height: 140px;
-  margin: 10px;
-  border-radius: 15px;
-  /* position: relative; */
-  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header img {
   margin: 15px;
@@ -79,14 +53,14 @@ header {
   right: 100px;
   height: 70px;
 }
+
 header a {
   color: azure;
   text-decoration: none;
-  cursor: pointer;
 }
 header a:hover,
 #hover:hover {
-  color: rgb(1, 3, 8);
+  color: rgb(11, 11, 14);
   font-weight: 600;
   cursor: pointer;
 }
@@ -99,44 +73,6 @@ header a:hover,
 #go {
   left: 10px;
 }
-.cover img {
-  width: 220px;
-  height: 140px;
-  border: 1px rgb(236, 255, 252) solid;
-  border-radius: 15px;
-  display: none;
-  animation: opac 0.3s;
-  animation-name: none;
-  animation-duration: 1.5s;
-}
-@keyframes opac {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes example {
-  0% {
-    border: 2px #e6c619 solid;
-  }
-  20% {
-    border: 2px #1b5057 solid;
-  }
-  60% {
-    border: 2px #e6c619 solid;
-  }
-  80% {
-    border: 2px #1b5057 solid;
-  }
-}
-.varela-round-regular {
-  font-family: "Varela Round", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
 .butten {
   font-size: 18px;
   padding: 3px;
@@ -145,7 +81,6 @@ header a:hover,
   border-radius: 8px;
   border: rgba wheat 6px;
   color: rgb(7, 41, 51);
-  /* text-decoration: none; */
   position: absolute;
   top: 3px;
   left: 10px;
@@ -164,14 +99,16 @@ header a:hover,
   border: 0px solid;
   background-color: darkcyan;
   color: azure;
+  margin-top: -20px;
   padding-right: 50px;
   padding-left: 50px;
   font-family: Varela Round;
-  margin-top: -20px;
   margin-bottom: 20px;
   animation: my-anim 2s ease-in-out infinite;
   max-width: 100%;
+  max-height: 100%;
 }
+
 @keyframes my-anim {
   0% {
     transform: scale(1);
@@ -183,12 +120,26 @@ header a:hover,
     transform: scale(1);
   }
 }
+.button {
+  height: 35px;
+  width: 310px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 0px solid;
+  background-color: darkcyan;
+  color: azure;
+  margin-top: 3px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: Varela Round;
+  margin-top: 7px;
+}
 .modal,
 .modal2 {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 200px;
+  padding-top: 120px;
   left: 0;
   top: 0;
   width: 100%;
@@ -205,9 +156,24 @@ header a:hover,
   width: 50%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 20px;
+  opacity: 0.95;
 }
 .modal-content2 {
-  opacity: 0.7;
+  opacity: 0.9;
+}
+#winmodal {
+  animation: example 2s ease-in-out infinite;
+}
+@keyframes example {
+  0% {
+    background-color: #eedb6f;
+  }
+  50% {
+    background-color: #c1e4e4;
+  }
+  100% {
+    background-color: #eedb6f;
+  }
 }
 .backinmodel {
   color: rgb(7, 41, 51);
@@ -256,21 +222,6 @@ header a:hover,
   header {
     font-size: 14px;
   }
-  .cover,
-  .cover img {
-    width: 170px;
-    height: 110px;
-  }
-}
-@media (max-width: 578px) {
-  header {
-    font-size: 12px;
-  }
-  .cover,
-  .cover img {
-    width: 140px;
-    height: 80px;
-  }
 }
 @media (max-width: 573px) {
   header {
@@ -294,16 +245,24 @@ header a:hover,
   header div p {
     margin-bottom: 2px;
   }
-  .cover,
-  .cover img {
-    width: 150px;
-    height: 90px;
+}
+@media (max-width: 490px) {
+  .box {
+    width: 80px;
+    height: 80px;
+    /* padding: 5px; */
+    margin: 0 auto;
   }
-  .box-r {
-    display: none;
+  .putintable {
+    width: 70px;
+    height: 70px;
   }
-  .box-l {
-    margin-right: 0px;
+  .continer {
+    border-radius: 10px;
+    height: 320px;
+  }
+  .continer-grid {
+    gap: 0.5px;
   }
   .butten2 {
     height: 60px;

@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let usersObj = JSON.parse(localStorage.getItem("users"));
   let myuser = usersObj.find((a) => a.name === user.name);
   username.innerHTML = myuser.name;
-  victories.innerHTML = myuser.victoriesMomery + myuser.victoriesTactic;
+  victories.innerHTML =
+    myuser.victoriesMomery + myuser.victoriesFind + myuser.victoriesTactic;
   //כפתור ניתוק משתמש
   go.addEventListener("click", function () {
     localStorage.removeItem("mytUser");

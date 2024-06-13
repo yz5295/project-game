@@ -69,6 +69,7 @@ buttonSignup.addEventListener("click", function signUp(event) {
         email: newEmail,
         pass: newPass,
         victoriesMomery: 0,
+        victoriesFind: 0,
         victoriesTactic: 0,
       };
       const myUser = JSON.stringify(objUser);

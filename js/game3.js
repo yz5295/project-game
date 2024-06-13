@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.replace("/index.html");
   });
 });
-//כפתור בחירה איקס או עיגול ומעביר למשחק
+//הפעלת הוראות המשחק וכפתור סגירה
 continer.style.displey = "inline";
 butTOrules.addEventListener("click", function () {
   modal3.style.display = "block";
@@ -37,6 +37,7 @@ butTOrules.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
   modal3.style.display = "none";
 });
+//כפתור בחירה איקס או עיגול ומעביר למשחק
 x.addEventListener("click", () => play(x));
 o.addEventListener("click", () => play(o));
 let goodcomp = false;

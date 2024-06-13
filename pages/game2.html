@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/game2.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <title>Hidden treasure</title>
+  </head>
+  <body dir="rtl">
+    <body dir="rtl">
+      <header>
+        <img src="/assets/img/logo-search-grid-1x.png" alt="logo" id="logo" class="outheader"/>
+        <div>
+        <p>שם משתמש: <span id="username"></span></p>
+        <p>מספר נצחנות: <span id="victories"></span></p>
+      </div>
+        <p id="hover">הוראות למשחק</p>
+        <a href="/pages/menu.html">חזרה לעמוד הראשי</a>
+        <button id="go" class="outheader">נתק</button>
+      </header>
+    <div class="maintitle">
+      <h1 id="maintitle">מספר ניסיונות שנותרו: 3</h1>
+    </div>
+    <div class="continer">
+      <div class="continer-grid">
+        <div id="0" class="box"></div>
+        <div id="1" class="box"></div>
+        <div id="2" class="box"></div>
+        <div id="3" class="box"></div>
+        <div id="4" class="box"></div>
+        <div id="5" class="box"></div>
+        <div id="6" class="box"></div>
+        <div id="7" class="box"></div>
+        <div id="8" class="box"></div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h1 id="tit"></h1>
+        <form action="">
+          <button value="sumbit" class="butten2">שחק שוב</button>
+        </form>
+        <a class="backinmodel" href="/pages/menu.html">חזרה לעמוד הראשי</a>
+      </div>
+    </div>
+    <div id="myModal1" class="modal">
+      <div class="modal-content" id="winmodal">
+        <h1 id="tit1"></h1>
+        <form action="">
+          <button value="sumbit" class="butten2">שחק שוב</button>
+        </form>
+        <a class="backinmodel" href="/pages/menu.html">חזרה לעמוד הראשי</a>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content2">
+          <h1 id="tit2"></h1>
+        </div>
+      </div>
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <p>
+          <span class="close">&times;</span>
+          <strong> הוראות למשחק מצא את המטמון:</strong>
+          
+          <br />
+          במשחק "מצא את המטמון" יש לך לוח משחק עם 9 ריבועים מסודרים במטריצה 3x3. בכל תור, אתה יכול לבחור ריבוע אחד ולנסות לגלות אם המטמון מסתתר מתחתיו. יש לך 3 ניסיונות למצוא את הריבוע הנכון המסתיר את המטמון. אם אתה מוצא את המטמון, אתה זוכה. אם לא, הריבוע שנבחר מסומן ואתה יכול לנסות שוב עם ניסיון חדש. המשחק מסתיים כשאתה מוצא את המטמון או כאשר מספר הניסיונות הסתיים. <br>
+          <strong>בהצלחה!</strong>
+        </p>
+      </div>
+    </div>
+    <script src="/js/game2.js"></script>
+  </body>
+</html>
